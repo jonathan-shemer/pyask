@@ -1,7 +1,7 @@
 from dataclasses import dataclass, fields
 from typing import Optional, Tuple, Union
 
-from pyask.dataclass import optional_fields
+import pyask
 
 
 def test_optional_fields():
@@ -11,5 +11,5 @@ def test_optional_fields():
         b: Tuple[int, int]
         c: Union[int, str]
 
-    assert optional_fields(A) == (fields(A)[0],)
-    assert optional_fields(A(1, (2, 3), "hello")) == (fields(A)[0],)
+    assert pyask.optional_fields(A) == (fields(A)[0],)
+    assert pyask.optional_fields(A(1, (2, 3), "hello")) == (fields(A)[0],)

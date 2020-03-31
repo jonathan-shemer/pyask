@@ -1,0 +1,6 @@
+pytest-metadata
+tox
+twine
+bump
+setuptools
+wheel

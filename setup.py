@@ -5,7 +5,7 @@ from os.path import exists
 from setuptools import setup
 
 setup(name='pyask',
-      version='0.2.1',
+      version='0.2.2',
       description='A set of pure utility methods for python.',
       url='https://github.com/jonathan-shemer/pyask',
       license='MIT',

@@ -10,7 +10,4 @@ def first(iterable: Iterable[Any], default: Optional[Any] = None) -> Any:
     :param default: value to return if the iterable is empty. None by default.
     :return: first of an `Iterable` or default
     """
-    try:
-        return next(iter(iterable))
-    except StopIteration:
-        return default
+    return next(iter(iterable), default)
